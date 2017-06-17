@@ -1,0 +1,148 @@
+:root {
+  --primary-color: var(--red-400);
+  --red-400: #ef5350;
+  --border-color: rgba(0,0,0,.0785);
+}
+
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Alice', serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 75px;
+  background-color: white;
+  z-index: 500;
+
+
+  font-size: 14pt;
+  
+  /* offset-x | offset-y | blur-radius | color */
+
+  border-bottom: 1px solid;
+  color: var(--primary-color);
+  border-color: var(--border-color);
+  
+}
+article {
+  font-size: 1.7em;
+  color: rgba(0,0,0,.6);
+  height: 300px;
+}
+
+.article-header {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: nowrap; 
+
+}
+.article-header .profile {
+  display: flex;
+  flex-direction: column; 
+  margin: 0 10px;
+  align-self: center;
+
+
+}
+.article-header .profile-picture {
+  background-color: black;
+  border-radius: 50%;
+  padding: 2px;
+  width:50px;
+  height:50px;
+  
+}
+.article-header .profile .author-name {
+  color: var(--primary-color);
+  font-size: 2em;
+}
+.article-header .date-created {
+  color: rgba(0,0,0,.4);
+}
+
+.article-footer {
+  display: flex;
+}
+.article-footer .favorite-icon {
+  height: 35px;
+  width: 35px;
+  padding: 5px 0;
+}
+
+.article-footer .favorite-count {
+  font-size: 26pt;
+  margin-left: 10px;
+  margin-right: 10px;
+  /*padding: 5px 0;*/
+}
+
+.nav-item-block {
+  float:right;
+}
+.nav-item {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 20px 1px;
+}
+a:hover {
+  color: #546E7A;
+}
+.primary-text {
+  font-weight: 900;
+  font-family: 'Alice', serif;
+  font-size: 1.5em;
+}
+.content {
+  padding-top: 75px;
+}
+.card {
+  max-width: 650px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 50px auto;
+  border: 1px solid;
+  border-color: var(--border-color);
+}
+
+.card-section {
+  margin: 30px;
+}
+/* Bootstrap Container */
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.image-container {
+  max-width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+img.media {
+  max-width: 100%;
+  transform: translateY(-5%);
+  height:auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 650px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 800px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
